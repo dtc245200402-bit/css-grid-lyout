@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="#top" aria-label="Trang chủ">
+        <span class="brand-mark">G</span>
+        <span>GridSpace</span>
+      </a>
+      <span class="header-label">THỰC HÀNH CSS GRID</span>
+    </header>
+
+    <nav class="sidebar" aria-label="Điều hướng chính">
+      <p class="sidebar-heading">DANH MỤC</p>
+      <a class="nav-link active" href="#overview"><span class="nav-icon">⌂</span> Tổng quan</a>
+      <a class="nav-link" href="#layout"><span class="nav-icon">▦</span> Bố cục Grid</a>
+      <a class="nav-link" href="#responsive"><span class="nav-icon">▣</span> Responsive</a>
+      <div class="sidebar-note">
+        <span class="note-icon">✦</span>
+        <strong>Góc học tập</strong>
+        <p>Chia bố cục rõ ràng bằng CSS Grid.</p>
+      </div>
+    </nav>
+
+    <main class="content" id="overview">
+      <section class="welcome-panel">
+        <div>
+          <p class="eyebrow">BÀI THỰC HÀNH · 01</p>
+          <h1>Xây dựng bố cục với CSS Grid</h1>
+          <p class="intro">Một bố cục gọn gàng, dễ đọc và tự thích nghi trên màn hình máy tính lẫn điện thoại.</p>
+        </div>
+        <div class="grid-illustration" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <section class="section-block" id="layout">
+        <div class="section-title-row">
+          <div>
+            <p class="eyebrow">CẤU TRÚC TRANG</p>
+            <h2>Ba khu vực chính</h2>
+          </div>
+          <span class="small-chip">CSS Grid</span>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-number">01</span>
+            <div class="feature-icon icon-header">▤</div>
+            <h3>Header</h3>
+            <p>Vùng đầu trang để đặt tên website và thông tin nhận diện.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-number">02</span>
+            <div class="feature-icon icon-side">☷</div>
+            <h3>Sidebar</h3>
+            <p>Khu vực điều hướng và các liên kết phụ trợ.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-number">03</span>
+            <div class="feature-icon icon-main">▦</div>
+            <h3>Main Content</h3>
+            <p>Phần nội dung chính, chiếm nhiều không gian hiển thị hơn.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tip-panel" id="responsive">
+        <span class="tip-icon">↔</span>
+        <div>
+          <h2>Thiết kế responsive</h2>
+          <p>Trên desktop, Sidebar và nội dung nằm cạnh nhau. Khi màn hình rộng không quá 768px, các khu vực chuyển thành một cột theo chiều dọc.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 GridSpace · Bài thực hành HTML &amp; CSS</span>
+      <span class="footer-status"><i></i> Layout responsive</span>
+    </footer>
+  </div>
+</body>
+</html>
